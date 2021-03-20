@@ -18,6 +18,12 @@ public class main {
         JavalinRenderer.register(JavalinThymeleaf.INSTANCE, ".html");
         ///Primera vista de la página
 
+        app.get("/", ctx -> {
+
+            ctx.result("ESTA ES EL TESTAPP1");
+
+
+        });
     }
 
 }
