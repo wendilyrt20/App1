@@ -10,8 +10,6 @@ public class main {
 
 
         Javalin app = Javalin.create(config -> {
-            //set configs
-            config.addStaticFiles("/");
 
         }).start(7000);
 
