@@ -32,7 +32,7 @@ test {
 }
 
 shadowJar{
-    baseName = 'AppTest1'
+    baseName = 'app1'
     classifier = ''
     archiveVersion = ''
 }

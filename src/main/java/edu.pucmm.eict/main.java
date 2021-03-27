@@ -7,20 +7,13 @@ import io.javalin.plugin.rendering.template.JavalinThymeleaf;
 public class main {
 
     public static void main(String[] args){
-
-
         Javalin app = Javalin.create(config -> {
-
-        }).start(7000);
-
+        }).start(8001);
         JavalinRenderer.register(JavalinThymeleaf.INSTANCE, ".html");
         ///Primera vista de la página
 
         app.get("/", ctx -> {
-
-            ctx.result("ESTA ES EL TESTAPP1");
-
-
+            ctx.result("Bienvenido a aplicacion 1");
         });
     }
 
